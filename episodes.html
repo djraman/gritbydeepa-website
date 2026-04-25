@@ -10,7 +10,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav>
+  <nav id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Grit <span>by Deepa</span></a>
       <ul class="nav-links">
@@ -20,8 +20,16 @@
         <li><a href="sponsor.html">Work With Us</a></li>
         <li><a href="index.html#newsletter" class="nav-cta">Get the Free Guide</a></li>
       </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     </div>
   </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="episodes.html">Episodes</a>
+    <a href="blog.html">Blog</a>
+    <a href="pitch.html">Be a Guest</a>
+    <a href="sponsor.html">Work With Us</a>
+    <a href="index.html#newsletter" class="mobile-cta">Get the Free Guide →</a>
+  </div>
 
   <!-- Page Hero -->
   <section class="page-hero">
@@ -95,18 +103,39 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-logo">Grit <span>by Deepa</span></div>
-      <ul class="footer-links">
-        <li><a href="episodes.html">Episodes</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="pitch.html">Be a Guest</a></li>
-        <li><a href="sponsor.html">Work With Us</a></li>
-        <li><a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank">YouTube</a></li>
-      </ul>
-      <p class="footer-copy">&copy; 2026 Grit by Deepa. All rights reserved.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Grit <span>by Deepa</span></div>
+        <p>Real talk with creatives who built it anyway.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="pitch.html">Be a Guest</a></li>
+          <li><a href="sponsor.html">Work With Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Watch</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank">YouTube Channel</a></li>
+          <li><a href="index.html#newsletter">Free Guide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Grit by Deepa. All rights reserved.</p>
+      <p>Built with grit in the Bay Area 🌉</p>
     </div>
   </footer>
+  <script>
+    const h = document.getElementById('hamburger'), m = document.getElementById('mobile-menu');
+    h.addEventListener('click', () => { h.classList.toggle('open'); m.classList.toggle('open'); });
+    m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { h.classList.remove('open'); m.classList.remove('open'); }));
+    window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20));
+  </script>
 
 </body>
 </html>

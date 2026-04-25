@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grit by Deepa — Real talk with creatives who built it anyway</title>
-  <meta name="description" content="Built by Grit is a long-form interview podcast with international artists, writers, playwrights, and creatives who built real careers. Hosted by Deepa Janakiraman." />
+  <meta name="description" content="Built by Grit is a long-form interview podcast with international artists, writers, playwrights, and creatives. Hosted by Deepa Janakiraman." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav>
+  <nav id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Grit <span>by Deepa</span></a>
       <ul class="nav-links">
@@ -20,104 +20,220 @@
         <li><a href="sponsor.html">Work With Us</a></li>
         <li><a href="#newsletter" class="nav-cta">Get the Free Guide</a></li>
       </ul>
+      <div class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="episodes.html">Episodes</a>
+    <a href="blog.html">Blog</a>
+    <a href="pitch.html">Be a Guest</a>
+    <a href="sponsor.html">Work With Us</a>
+    <a href="#newsletter" class="mobile-cta">Get the Free Guide →</a>
+  </div>
 
   <!-- Hero -->
   <section class="hero">
     <div class="hero-inner">
+
       <div class="hero-text">
-        <p class="section-label">Built by Grit Podcast</p>
-        <h1>Real talk with creatives who built it anyway.</h1>
-        <p>Long-form conversations with international artists, writers, playwrights, and musicians about what the creative life actually costs, earns, and requires.</p>
+        <div class="hero-eyebrow">
+          <div class="dot"></div>
+          Built by Grit Podcast · Now on YouTube
+        </div>
+        <h1>Real talk with creatives who <em>built it anyway.</em></h1>
+        <p>Long-form conversations with international artists, writers, playwrights, and musicians — about what the creative life actually costs, earns, and requires.</p>
         <div class="hero-buttons">
-          <a href="episodes.html" class="btn btn-primary">Watch Episodes</a>
+          <a href="episodes.html" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Watch Episodes
+          </a>
           <a href="pitch.html" class="btn btn-outline">Be a Guest</a>
         </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">60+</div>
+            <div class="hero-stat-label">Episodes</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">🌍</div>
+            <div class="hero-stat-label">Global Guests</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">3</div>
+            <div class="hero-stat-label">Core Questions</div>
+          </div>
+        </div>
       </div>
-      <div class="hero-image">
-        <!-- Replace deepa.jpg with your photo file -->
-        <img src="images/deepa.jpg" alt="Deepa Janakiraman — Host of Built by Grit" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-        <div class="hero-image-placeholder" style="display:none;">Add your photo here: images/deepa.jpg</div>
+
+      <div class="hero-visual">
+        <div class="dot-grid"></div>
+        <div class="hero-img-wrap">
+          <img
+            src="images/deepa.jpg"
+            alt="Deepa Janakiraman — Host of Built by Grit"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hero-img-placeholder" style="display:none;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            <p>Add deepa.jpg to the images/ folder</p>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-icon">🎙️</div>
+          <div class="hero-badge-text">
+            <strong>New Episode</strong>
+            <span>Every week on YouTube</span>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
+
+  <!-- Marquee / Trust Bar -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>🎨</span> Visual Artists</div>
+      <div class="marquee-item"><span>✍️</span> Writers & Authors</div>
+      <div class="marquee-item"><span>🎭</span> Playwrights</div>
+      <div class="marquee-item"><span>🎵</span> Musicians</div>
+      <div class="marquee-item"><span>💃</span> Performers</div>
+      <div class="marquee-item"><span>🎬</span> Filmmakers</div>
+      <div class="marquee-item"><span>📸</span> Photographers</div>
+      <div class="marquee-item"><span>🌍</span> International Creatives</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><span>🎨</span> Visual Artists</div>
+      <div class="marquee-item"><span>✍️</span> Writers & Authors</div>
+      <div class="marquee-item"><span>🎭</span> Playwrights</div>
+      <div class="marquee-item"><span>🎵</span> Musicians</div>
+      <div class="marquee-item"><span>💃</span> Performers</div>
+      <div class="marquee-item"><span>🎬</span> Filmmakers</div>
+      <div class="marquee-item"><span>📸</span> Photographers</div>
+      <div class="marquee-item"><span>🌍</span> International Creatives</div>
+    </div>
+  </div>
 
   <!-- About Strip -->
   <section class="about-strip">
     <div class="container">
-      <p class="section-label" style="color: rgba(255,255,255,0.5);">About the Show</p>
-      <h2>60+ conversations. One question behind every one: how did you really build this?</h2>
-      <p style="margin-top: 20px;">I'm Deepa — Bay Area-based host, product manager, and lifelong creative. Built by Grit goes behind the art to ask the questions most interviews skip: what does this pay, what did it cost, and what kept you going? Guests span continents — from published authors to visual artists to performers who've built careers on nothing but talent and tenacity.</p>
-      <a href="#about" class="btn btn-outline" style="margin-top: 32px; border-color: rgba(255,255,255,0.4); color: white;">More About Deepa</a>
+      <div class="about-strip-inner">
+        <div class="about-strip-left">
+          <p class="section-label" style="color: rgba(255,255,255,0.4);">About the Show</p>
+          <h2>60+ conversations. One question behind every one: how did you <em>really</em> build this?</h2>
+        </div>
+        <div class="about-strip-right">
+          <p>I'm Deepa — Bay Area-based host, product manager, and lifelong creative. Built by Grit goes behind the art to ask the questions most interviews skip: what does this pay, what did it cost, and what kept you going?</p>
+          <p>Guests span continents — from NYT bestselling authors to visual artists to performers who've built careers on nothing but talent and tenacity.</p>
+          <a href="#about" class="btn btn-outline" style="margin-top: 8px;">More About Deepa</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Featured Episodes -->
   <section class="episodes-section">
     <div class="container">
-      <p class="section-label">Latest Episodes</p>
-      <h2>Recent Conversations</h2>
+      <div class="section-header">
+        <div>
+          <p class="section-label">Latest Episodes</p>
+          <h2>Recent Conversations</h2>
+        </div>
+        <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="btn btn-outline">All Episodes →</a>
+      </div>
 
       <div class="episodes-grid">
 
-        <!-- Episode 1 — replace VIDEO_ID with actual YouTube video ID -->
         <div class="episode-card">
           <div class="episode-thumb">
-            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=BuiltbyGritPod" allowfullscreen title="Built by Grit Episode"></iframe>
+            <iframe
+              src="https://www.youtube.com/embed?listType=user_uploads&list=BuiltbyGritPod"
+              allowfullscreen
+              title="Built by Grit — Latest Episode">
+            </iframe>
           </div>
           <div class="episode-info">
             <h3>Watch our latest episodes on YouTube</h3>
             <p>Long-form conversations with creatives who built real careers — globally.</p>
-            <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="episode-link">Watch on YouTube →</a>
+            <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="episode-link">Watch on YouTube</a>
           </div>
         </div>
 
-        <!-- Episode Card 2 -->
         <div class="episode-card">
-          <div class="episode-thumb" style="background: #F0EDE8; display: flex; align-items: center; justify-content: center;">
-            <span style="color: #999; font-size: 0.85rem;">More episodes on YouTube</span>
+          <div class="episode-thumb">
+            <div class="episode-thumb-placeholder">
+              <span class="episode-tag">Interview</span>
+              <div class="play-icon"></div>
+            </div>
           </div>
           <div class="episode-info">
             <h3>International Artists on Building a Career</h3>
             <p>What does it take to sustain a creative life across borders? We ask the real questions.</p>
-            <a href="episodes.html" class="episode-link">All Episodes →</a>
+            <a href="episodes.html" class="episode-link">All Episodes</a>
           </div>
         </div>
 
-        <!-- Episode Card 3 -->
         <div class="episode-card">
-          <div class="episode-thumb" style="background: #EDE8E3; display: flex; align-items: center; justify-content: center;">
-            <span style="color: #999; font-size: 0.85rem;">Subscribe for new episodes</span>
+          <div class="episode-thumb">
+            <div class="episode-thumb-placeholder" style="background: linear-gradient(135deg, #e8ddd0, #d4c5b0);">
+              <span class="episode-tag">Deep Dive</span>
+              <div class="play-icon"></div>
+            </div>
           </div>
           <div class="episode-info">
             <h3>The Economics of the Creative Life</h3>
             <p>Real income numbers, real decisions, real grit — from working creatives worldwide.</p>
-            <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="episode-link">Subscribe →</a>
+            <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="episode-link">Subscribe</a>
           </div>
         </div>
 
       </div>
 
       <div class="episodes-cta">
-        <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="btn btn-primary">Watch All Episodes on YouTube</a>
+        <a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.27 8.27 0 0 0 4.84 1.54V6.78a4.85 4.85 0 0 1-1.07-.09z"/></svg>
+          Watch All Episodes on YouTube
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Newsletter / Lead Magnet -->
+  <!-- Newsletter -->
   <section class="newsletter-section" id="newsletter">
     <div class="container">
-      <p class="section-label" style="color: rgba(255,255,255,0.6);">Free Guide</p>
-      <h2>How 5 International Creatives Built a Career That Pays</h2>
-      <p>Real income streams, real decisions, real timelines — pulled from 60 interviews. Free when you join the list.</p>
+      <div class="newsletter-inner">
 
-      <!-- Replace action with your MailerLite form embed URL -->
-      <form class="newsletter-form" action="#" method="post">
-        <input type="email" name="email" placeholder="Your email address" required />
-        <button type="submit">Get the Free Guide</button>
-      </form>
-      <p class="newsletter-note">No spam. Unsubscribe any time. Your email stays yours.</p>
+        <div class="newsletter-left">
+          <p class="section-label" style="color: rgba(255,255,255,0.5);">Free Guide</p>
+          <h2>How 5 International Creatives Built a Career That Pays</h2>
+          <p>Real income streams, real decisions, real timelines — pulled from 60 interviews.</p>
+
+          <div class="newsletter-guide-preview">
+            <h4>Inside the free guide</h4>
+            <div class="guide-item">The 5 income streams working creatives actually use</div>
+            <div class="guide-item">How long before it paid — real timelines</div>
+            <div class="guide-item">The financial decision each would make differently</div>
+            <div class="guide-item">What sustained them before the breakthrough</div>
+          </div>
+        </div>
+
+        <div class="newsletter-right">
+          <h3>Get it free — join the list</h3>
+          <p>No spam. Unsubscribe any time. Your email stays yours.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your first name" />
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button type="submit">Get the Free Guide →</button>
+          </form>
+          <p class="newsletter-note">You'll also get new episodes and creative career insights — no fluff.</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -128,46 +244,126 @@
       <h2>The Show is Making an Impact</h2>
 
       <div class="testimonial-card">
+        <div class="quote-mark">"</div>
         <blockquote>
-          "Every episode I have watched thus far is as splendid as it is enthralling and educational. I have learnt so much during these last few months that I sometimes easily forget how much grit YOU possess YOURSELF in order to produce such fascinating episodes, present such cranial questions to the guests, and blend everything into such a greatly memorable experience."
+          Every episode I have watched thus far is as splendid as it is enthralling and educational. I have learnt so much during these last few months that I sometimes easily forget how much grit YOU possess YOURSELF in order to produce such fascinating episodes, present such cranial questions to the guests, and blend everything into such a greatly memorable experience.
         </blockquote>
-        <p class="testimonial-author">— Nachiketa Yakkundi, listener</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">N</div>
+          <div class="author-info">
+            <strong>Nachiketa Yakkundi</strong>
+            <span>Listener</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About Deepa -->
-  <section id="about" style="background: var(--off-white);">
+  <section class="about-section" id="about">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-        <div>
+      <div class="about-grid">
+
+        <div class="about-img-wrap">
+          <img
+            src="images/deepa.jpg"
+            alt="Deepa Janakiraman"
+            onerror="this.style.background='#e8ddd0'; this.style.minHeight='480px'; this.style.borderRadius='16px'; this.removeAttribute('src');"
+          />
+          <div class="about-accent-box"></div>
+        </div>
+
+        <div class="about-text">
           <p class="section-label">About the Host</p>
           <h2>I'm Deepa Janakiraman.</h2>
-          <p style="margin-top: 20px;">Bay Area-based product manager, lifelong creative, and host of Built by Grit. I've spent years inside the Indian classical arts world — as a hobbyist musician and community organizer — and I've been fascinated by one question: how do creatives actually build careers that last?</p>
-          <p style="margin-top: 16px;">Built by Grit is my attempt to answer that question — honestly, globally, and without the highlight reel. Every guest gets asked the same three questions: what does this pay, what are your income streams, and what financial decision would you make differently?</p>
-          <a href="pitch.html" class="btn btn-primary" style="margin-top: 32px;">Be a Guest on the Show</a>
+          <p style="margin-top: 16px;">Bay Area-based product manager, lifelong creative, and host of Built by Grit. I've spent years inside the Indian classical arts world — as a hobbyist musician and community organizer — fascinated by one question: how do creatives actually build careers that last?</p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">💰</div>
+              <div>
+                <h4>Creative Economics</h4>
+                <p>What does it pay? What are the income streams? Every guest answers honestly.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🔥</div>
+              <div>
+                <h4>Creative Grit</h4>
+                <p>What sustained you through the years before the breakthrough?</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🌍</div>
+              <div>
+                <h4>Global Perspective</h4>
+                <p>Artists, writers, playwrights — from every corner of the world.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="pitch.html" class="btn btn-primary">Be a Guest on the Show</a>
         </div>
-        <div>
-          <img src="images/deepa.jpg" alt="Deepa Janakiraman" style="border-radius: 8px; width: 100%;" onerror="this.style.display='none';" />
-        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-logo">Grit <span>by Deepa</span></div>
-      <ul class="footer-links">
-        <li><a href="episodes.html">Episodes</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="pitch.html">Be a Guest</a></li>
-        <li><a href="sponsor.html">Work With Us</a></li>
-        <li><a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank">YouTube</a></li>
-      </ul>
-      <p class="footer-copy">&copy; 2026 Grit by Deepa. All rights reserved.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Grit <span>by Deepa</span></div>
+        <p>Real talk with creatives who built it anyway. Long-form interviews about the economics and grit behind creative careers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="pitch.html">Be a Guest</a></li>
+          <li><a href="sponsor.html">Work With Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Watch</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@BuiltbyGritPod" target="_blank">YouTube Channel</a></li>
+          <li><a href="#newsletter">Free Guide</a></li>
+          <li><a href="pitch.html">Apply as Guest</a></li>
+          <li><a href="sponsor.html">Sponsor the Show</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Grit by Deepa. All rights reserved.</p>
+      <p>Built with grit in the Bay Area 🌉</p>
     </div>
   </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // Nav shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
 
 </body>
 </html>
